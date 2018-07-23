@@ -1,119 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Andrew Strubitskiy - resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Webpack</title>
+    <link rel="stylesheet" href="/index.css">
 
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="Andrew_strubitskiy resume"/>
-<meta charset="UTF-8"> 
+	<!--script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyB1sS2sTcMdYXzYteMJY8d6ZhpzLwoJ3u8",
+	    authDomain: "portfolio-ebbed.firebaseapp.com",
+	    databaseURL: "https://portfolio-ebbed.firebaseio.com",
+	    projectId: "portfolio-ebbed",
+	    storageBucket: "",
+	    messagingSenderId: "573935619408"
+	  };
+	  firebase.initializeApp(config);
 
-<link type="text/css" rel="stylesheet" href="style.css">
-<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+
+
+	  var database = firebase.database();
+		
+		//create a variable to hold our orders list from firebase
+		var firebaseOrdersCollection = database.ref().child('likes');
+		//this function is called when the submit button is clicked
+		function submitOrder() {
+			//Grab order data from the form
+			var likes = {
+				count: 23
+			};
+			
+			//'push' (aka add) your order to the existing list
+			firebaseOrdersCollection.push(likes); //'orders' is the name of the 'collection' (aka database table)
+			
+		};
+		
+		//create a 'listener' which waits for changes to the X4ibWy2MDNEhFh values inside the firebaseOrdersCollection 
+		firebaseOrdersCollection.on('value',function(likes){
+			
+			//create an empty string that will hold our new HTML
+			var allOrdersHtml = "";
+			
+			//this is saying foreach order do the following function...
+			orders.forEach(function(firebaseOrderReference){
+				
+				//this gets the actual data (JSON) for the order.
+				var like = firebaseOrderReference.val();
+				console.log(like);
+				
+			});
+		});
+		
+	</script-->
+
 </head>
-<body id="top">
-<div id="cv" class="instaFade">
-	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="headshot.jpg" alt="Alan Smith" />
-		</div>
-		
-		<div id="name">
-			<h1 class="quickFade delayTwo">Andrew Strubitskiy</h1>
-			<h2 class="quickFade delayThree">Web-developer</h2>
-		</div>
-		
-		<div id="contactDetails" class="quickFade delayFour">
-			<ul>
-				<li>Email: <a href="mailto:Andrew_strubitskiy@mail.ru" target="_blank">Andrew_strubitskiy@mail.ru</a></li>
-				<li>Возраст: 29 лет</li>
-				<li>Телефон: +375 29 149-23-03</li>
-				<li>Скайп: <a href="skype:choconoTiler?add">choconoTiler</a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-	
-	<div id="mainArea" class="quickFade delayFive">
-		<section>
-			<article>
-				<div class="sectionTitle">
-					<h1>Сфера деятельности:</h1>
-				</div>
-				
-				<div class="sectionContent">
-					<p>Занимаюсь разработкой и оптимизацией сайтов любой сложности. От лендингов и сайтов-визиток до больших корпоративных сайтов. Разработка проектов на PHP и JS. Обладаю такими полезными качествами как трудолюбие, усидчивость, ответственность и самоорганизация. Выполняю работу качественно и в отведенные сроки.</p>
-				</div>
-			</article>
-			<div class="clear"></div>
-		</section>
-		
-		
-		<section>
-			<div class="sectionTitle">
-				<h1>Опыт работы</h1>
-			</div>
-			
-			<div class="sectionContent">
-				<article>
-					<h2>Global consulting LTD</h2>
-					<p class="subDetails">Август 2017 - до настоящего времени</p>
-					<p>Поддержка проектов на laravel и Angular2. Техническое обслуживание клиентов.</p>
-				</article>
-				
-				<article>
-					<h2>Вебстудия Webmatrix</h2>
-					<p class="subDetails">Май 2017 - Август 2017</p>
-					<p>Разработка сайтов, SEO-оптимизация. Установка сайтов на популярные платформы (Wordpress, Opencart, ModX)</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-		
-		
-		<section>
-			<div class="sectionTitle">
-				<h1>Навыки:</h1>
-			</div>
-			
-			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>JS</li>
-					<li>ReactJS</li>
-					<li>NodeJS</li>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>PHP</li>
-					<li>Bootstrap</li>
-					<li>jQuery</li>
-					<li>laravel</li>
-					<li>Работа с терминалом</li>
-					<li>webpack</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</section>
-		
-		
-		<section>
-			<div class="sectionTitle">
-				<h1>Образование</h1>
-			</div>
-			
-			<div class="sectionContent">
-				<article>
-					<h2>Белорусский Государственный Университет</h2>
-					<p class="subDetails">Физик-исследователь.</p>
-					<p>Окончил физический факультет в 2006 году. Специализация: Физика - научно-исследовательская деятельность.</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
-		
-	</div>
-</div>
+
+<body id="BG">
+    <div id="container"></div>    
+    <script src="/index.js"></script>
 </body>
 </html>
