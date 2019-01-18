@@ -10,57 +10,6 @@
 	<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;background: #313131 ;}#hellopreloader_preload>img{position: absolute;width: 41px; height: 60px; display:block;top:50%;left: 50%;transform: translate(-50%,-50%);}</style>
 	<div id="hellopreloader"><div id="hellopreloader_preload"><img src="http://hello-site.ru//main/images/preloads/audio.svg" alt=""></div><p><a href="/">My Portfolio.</a></p></div>
 	<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},0);};</script>
-<!-- HelloPreload http://hello-site.ru/preloader/ -->
-
-	<!--script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-	<script>
-	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyB1sS2sTcMdYXzYteMJY8d6ZhpzLwoJ3u8",
-	    authDomain: "portfolio-ebbed.firebaseapp.com",
-	    databaseURL: "https://portfolio-ebbed.firebaseio.com",
-	    projectId: "portfolio-ebbed",
-	    storageBucket: "",
-	    messagingSenderId: "573935619408"
-	  };
-	  firebase.initializeApp(config);
-
-
-
-
-	  var database = firebase.database();
-		
-		//create a variable to hold our orders list from firebase
-		var firebaseOrdersCollection = database.ref().child('likes');
-		//this function is called when the submit button is clicked
-		function submitOrder() {
-			//Grab order data from the form
-			var likes = {
-				count: 23
-			};
-			
-			//'push' (aka add) your order to the existing list
-			firebaseOrdersCollection.push(likes); //'orders' is the name of the 'collection' (aka database table)
-			
-		};
-		
-		//create a 'listener' which waits for changes to the X4ibWy2MDNEhFh values inside the firebaseOrdersCollection 
-		firebaseOrdersCollection.on('value',function(likes){
-			
-			//create an empty string that will hold our new HTML
-			var allOrdersHtml = "";
-			
-			//this is saying foreach order do the following function...
-			orders.forEach(function(firebaseOrderReference){
-				
-				//this gets the actual data (JSON) for the order.
-				var like = firebaseOrderReference.val();
-				console.log(like);
-				
-			});
-		});
-		
-	</script-->
 
 </head>
 
