@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5a98ef5f.chunk.css",
+    "main.js": "/static/js/main.818af946.chunk.js",
+    "main.js.map": "/static/js/main.818af946.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.4a7952fb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.4a7952fb.js.map",
+    "static/css/2.9fe79841.chunk.css": "/static/css/2.9fe79841.chunk.css",
+    "static/js/2.7d7fdb94.chunk.js": "/static/js/2.7d7fdb94.chunk.js",
+    "static/js/2.7d7fdb94.chunk.js.map": "/static/js/2.7d7fdb94.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.7d208ec7f6876fba70434601afbc8349.js": "/precache-manifest.7d208ec7f6876fba70434601afbc8349.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.9fe79841.chunk.css.map": "/static/css/2.9fe79841.chunk.css.map",
+    "static/css/main.5a98ef5f.chunk.css.map": "/static/css/main.5a98ef5f.chunk.css.map",
+    "static/media/flag-icon.css": "/static/media/zw.8b885465.svg",
+    "static/media/broodwar.png": "/static/media/broodwar.4cfdb244.png",
+    "static/media/styles.css": "/static/media/steakSmall1200.a6422583.png",
+    "static/media/guitare.png": "/static/media/guitare.6e91a511.png",
+    "static/media/history.png": "/static/media/history.9ae0b74e.png",
+    "static/media/lit_re.png": "/static/media/lit_re.e1341c0f.png",
+    "static/media/programmer.png": "/static/media/programmer.f6ab260e.png",
+    "static/media/st_t.png": "/static/media/st_t.e87aa795.png"
+  }
+}
