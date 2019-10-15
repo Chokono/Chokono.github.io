@@ -1,8 +1,11 @@
 {
   "/": "Home",
-  "/interesting": "interesting",
+  "/interesting": "Interesting",
   "/technology": "Steak of technologies",
   "/contacts": "Information",
+  "/interesting/": "Interesting",
+  "/technology/": "Steak of technologies",
+  "/contacts/": "Information",
   "firmTitle1": "AET Groupe",
   "firmDescription1": "Working at \"AET Groupe\" was the beginning of my IT career. At that time I didn’t have the skills or the experience, but frankly, I didn’t have enough knowledge. Basically, I did the simplest work. For the most part, this is a layout that is not burdened with complex technologies (HTML5, CSS3, JS). I didn’t know how to work with databases, didn’t know what CMS is, templates, etc. Therefore, I wrote down all the necessary data into one object and, using JS, dynamically rendered the page, installed filters. Also, I did not know how to use different libraries, so I had to write animation (sliders, automatic loading) from scratch myself. I also wrote an imitation of the basket, working through LocalStarage, in which you could add products, and send the selected email to the employer. In addition, the letter version for HTML mailing. My main task at that time was the development of a large corporate website. When all pages of the site were put together, I began to put the site on CMS. The employer’s choice was the MODX system. In the process of work I got acquainted with the principles of CMS, installation of plug-ins, the implementation of multilingual. But this site was never destined to replace the old one. I added to the new job before the authorities approved the replacement site.",
   "firmTitle2": "Webmatrix",
